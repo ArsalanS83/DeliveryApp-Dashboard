@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign Up</title>
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/animsition.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  </head>
+  <body id="sign-up-page">
+	<script src="js/jquery-1.11.3.min.js"></script>
+	
+	<div class="animsition">
+		<div class="appHeader">
+			<p id="headerText">Sign Up</p>
+		</div>
+		
+		<div class="back-button">
+			<a href="index.html"><img src="images/back.png" height="50" width="50" alt="Back Button" class="img-rounded img-responsive"></a>
+		</div>
+		
+		<form action="sign-up-handler.php" method="post" id="sign-up-form" role="form" data-toggle="validator">
+		
+			<div class="form-group">
+				<label for="firstName">First Name</label>
+    			<input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" pattern="^[A-z]{1,}$" required>
+			</div>
+			
+			<div class="form-group">
+   				<label for="surname">Surname</label>
+    			<input type="text" class="form-control" id="surname" name="surname" placeholder="Surname" pattern="^[A-z]{1,}$" required>
+			</div>
+			
+			<div class="form-group">
+				<label for="email" class="control-label">Email</label>
+ 				<input type="email" class="form-control" id="email" name="email" placeholder="Email" data-error="Invalid Email" required>
+ 				<div class="help-block with-errors"></div>
+ 			</div>
+ 			
+ 			<div class="form-group">
+				<label for="confirmEmail">Confirm Email</label>
+				<input type="text" class="form-control" id="confirmEmail" placeholder="Confirm Email" data-match="#email" data-match-error="Whoops, these don't match!" required>
+				<div class="help-block with-errors"></div>
+ 			</div>
+ 			
+ 			<div class="form-group">
+ 					<label for="password">Password</label>
+ 					<input type="password" data-minlength="6" class="form-control" id="password" name="password" placeholder="Password" required>
+ 					<div class="help-block">Minimum of 6 characters</div>
+ 			</div>
+ 			
+ 			<div class="form-group">
+				  <label for="confirmPassword">Confirm Password</label>
+				  <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password" data-match="#password" data-match-error="Whoops, these don't match!" required>
+				  <div class="help-block with-errors"></div>
+ 			</div>
+ 			
+ 			<div class="form-group">
+				<label for="phone">Phone Number</label>
+ 				<input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone Number" required>
+ 			</div>
+ 			
+ 			<div class="form-group">
+				<label class="signup-label">Address</label>
+ 				<input type="text" class="form-control" id="addressLine1" name="addressLine1" placeholder="Address Line 1" required>
+ 				<input type="text" class="form-control" id="addressLine2" name="addressLine2" placeholder="Address Line 2">
+ 				<input type="text" class="form-control" id="city" name="city" placeholder="City" required>
+				<input type="text" class="form-control" id="postcode" name="postcode" placeholder="Postcode" required>
+ 			</div>
+ 			
+ 			<div class="form-group">
+ 				<button type="submit" class="btn btn-lg btn-default button" id="signup-button">Submit</button>
+			</div>
+			
+		</form>			
+	</div>
+
+	<script src="js/bootstrap.js"></script>
+	<script src="js/animsition.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.js"></script>
+	<script>
+	  $(document).ready(function() {
+		  $(".animsition").animsition({
+			  inClass: 'fade-in',
+			  outClass: 'fade-out',
+			  inDuration: 900,
+			  outDuration: 800,
+			  linkElement: '.animsition-link',
+			  loading: true,
+			  loadingParentElement: 'body', 
+			  loadingClass: 'animsition-loading',
+			  loadingInner: '',
+			  timeout: false,
+			  timeoutCountdown: 5000,
+			  onLoadEvent: true,
+			  browser: [ 'animation-duration', '-webkit-animation-duration'],
+			  overlay : false,
+			  overlayClass : 'animsition-overlay-slide',
+			  overlayParentElement : 'body',
+			  transition: function(url){ window.location.href = url; }
+		  });
+	  });
+	  </script>
+  </body>
+</html>
