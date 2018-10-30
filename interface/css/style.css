@@ -1,0 +1,223 @@
+@charset "UTF-8";
+
+body {
+	background-color: #414141;
+}
+
+/* Login Page */
+#logo {
+	margin-top: 3%;
+	margin-bottom: auto;
+	margin-left: auto;
+	margin-right: auto;
+	width: 200px;
+	height: 200px;
+}
+
+.login-area {
+	position: relative;
+	top: 50px;
+	text-align: center;
+	color: white;
+	width: 500px;
+	margin: auto;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+#login-button {
+	width: 500px;
+	margin: auto;	
+}
+
+/* Button Design */
+.button {
+	background-color: #f1c40f;
+	color: black;
+	display: block;
+	width: 20%;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.interfaceButton {
+	background-color: #f1c40f;
+	color: black;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Login Handler Page */
+#errorMessage {
+	position: relative;
+	top: 50px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 30px;
+	color: white;
+	text-align: center;
+}
+
+.handler-area {
+	position: relative;
+	top: 50px;
+	text-align: center;
+}
+
+.handlerButton {
+	position: relative;
+	top: 50px;
+	margin: auto;
+}
+
+#handler-image {
+	margin-top: 3%;
+	margin-bottom: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Welcome Page */
+.header {
+	background-color: white;
+	position: relative;
+	top: 50px;
+	text-align: center;
+	height: 66px;
+	width: 100%;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 17px;
+}
+
+#welcomeText {
+	position: relative;
+	top: 20px;
+}
+
+.welcome-area {
+	position: relative;
+	top: 80px;
+}
+
+.welcomeButtons {
+	width: 300px;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+}
+
+.back-button {
+	position: relative;
+	top: -5px;
+	z-index: 0;
+}
+
+#loggedIn {
+	position: absolute;
+	top: 312px;
+	left: 90px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 17px;
+	width: 300px;
+	text-align: center;
+}
+
+#date {
+	position: absolute;
+	top: 312px;
+	left: 950px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 17px;
+	width: 200px;
+	text-align: center;
+}
+
+#time {
+	position: absolute;
+	top: 312px;
+	left: 1200px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 17px;
+	width: 20px;
+	text-align: center;
+}
+
+/* Manage Orders Page*/
+.order-area, .review-area {
+	position: relative;
+	top: 80px;
+}
+
+/* Order Table and Review Table Design */
+#orderTable, #reviewTable {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 17px;
+	background-color: #bdc3c7;
+}
+
+.order-details-area {
+	position: relative;
+	top: 100px;
+	background-color: #bdc3c7;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 17px;
+}
+
+#requirements {
+	position: relative;
+	width: 600px;
+	text-align: center;
+	margin: auto;
+}
+
+#requirementData {
+	text-align: center;
+}
+
+#orderDetails {
+	position: relative;
+	top: 80px;
+	margin: auto;
+	width: 200px;
+	color: white;	
+}
+
+.response-area {
+	position: relative;
+	top: 100px;
+	height: 180px;
+	width: 800px;
+	margin: auto;
+	text-align: center;
+	background-color: #bdc3c7;
+}
+
+#responseNumber {
+	position: relative;
+	top: 20px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
+}
+
+#response {
+	position: relative;
+	top: 20px;
+	margin: auto;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 15px;
+	width: 700px;
+	resize: none;
+}
+
+#saveResponse {
+	position: relative;
+	top: 30px;
+	margin: auto;
+}
+
+#rateYo {
+	position: relative;
+	left: -10px;
+}
+
+#rating {
+	position: relative;
+	left: 50px;
+}
